@@ -1,4 +1,5 @@
 # config.py
+from typing import TypedDict
 
 # Topology ports (process sockets)
 SWITCH_PORT = 9100       # clients connect to L2 switch
@@ -13,8 +14,14 @@ SERVER_MAC = "FF:EE:DD:CC:BB:00"
 ROUTER_MAC_CLIENT_SIDE = "AA:BB:CC:DD:EE:01"
 ROUTER_MAC_SERVER_SIDE = "FF:EE:DD:CC:BB:01"
 
+
+class ClientConfig(TypedDict):
+    name: str
+    ip: str
+    mac: str
+    l4_src_port: int
 # Two clients with distinct configs
-CLIENTS = {
+CLIENTS: dict[str, ClientConfig] = {
     "c1": {
         "name": "Client-1",
         "ip": "192.168.1.100",
