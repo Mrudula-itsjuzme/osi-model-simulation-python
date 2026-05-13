@@ -4,6 +4,19 @@ An educational Python simulation of the OSI network model, showing how data move
 
 ---
 
+## Project links and evidence
+
+| Item | Link / Note |
+|---|---|
+| Repository | https://github.com/Mrudula-itsjuzme/osi-model-simulation-python |
+| Paper / reference | Computer-networks learning project; no paper attached |
+| Demo video | Not uploaded yet |
+| Deployment | Not applicable; local Python simulation |
+| Dataset note | No dataset required; simulation generates its own packet/data-flow behavior |
+| Result screenshots | Add terminal output, packet-flow screenshots, or visual dashboard images under `docs/` when finalized |
+
+---
+
 ## Problem statement
 
 The OSI model is easier to understand when you can see data moving layer by layer instead of only memorizing theory.
